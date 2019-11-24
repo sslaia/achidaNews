@@ -3,41 +3,111 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_headlines">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.blogspot.sslaia.achidanews.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_headlines"
+        android:name="com.blogspot.sslaia.achidanews.ui.HeadlinesFragment"
+        android:label="@string/menu_headlines"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/headlines_to_search"
+            app:destination="@id/nav_search"
+            app:enterAnim="@anim/slide_in_left"/>
+        <action
+            android:id="@+id/headlines_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.blogspot.sslaia.achidanews.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_family"
+        android:name="com.blogspot.sslaia.achidanews.ui.FamilyFragment"
+        android:label="@string/menu_family"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/family_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.blogspot.sslaia.achidanews.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_hrights"
+        android:name="com.blogspot.sslaia.achidanews.ui.HrightsFragment"
+        android:label="@string/menu_hrights"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/hrigts_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.blogspot.sslaia.achidanews.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_politics"
+        android:name="com.blogspot.sslaia.achidanews.ui.PoliticsFragment"
+        android:label="@string/menu_politics"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/politics_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.blogspot.sslaia.achidanews.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_sports"
+        android:name="com.blogspot.sslaia.achidanews.ui.SportFragment"
+        android:label="@string/menu_sports"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/sport_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.blogspot.sslaia.achidanews.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_wellbeing"
+        android:name="com.blogspot.sslaia.achidanews.ui.WellbeingFragment"
+        android:label="@string/menu_wellbeing"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/wellbeing_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.blogspot.sslaia.achidanews.ui.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about"/>
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.blogspot.sslaia.achidanews.ui.SearchFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/fragment_recyclerview">
+        <argument
+            android:name="searchQuery"
+            android:defaultValue="noQuery"
+            app:argType="string" />
+        <action
+            android:id="@+id/search_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+        <action
+            android:id="@+id/search_to_self"
+            app:destination="@id/nav_search" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_connection"
+        android:name="com.blogspot.sslaia.achidanews.ui.ConnectionFragment"
+        android:label="@string/menu_connection"
+        tools:layout="@layout/fragment_connection">
+        <action
+            android:id="@+id/connection_to_headlines"
+            app:destination="@id/nav_headlines"
+            app:enterAnim="@anim/slide_in_right"/>
+    </fragment>
+
 </navigation>

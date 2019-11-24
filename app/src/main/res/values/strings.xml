@@ -8,7 +8,7 @@
 
     <!-- Drawer and overflow menu -->
     <string name="menu_home">Home</string>
-    <string name="menu_main">Main source</string>
+    <string name="menu_main">Main news source</string>
     <string name="menu_alt">Alternative source</string>
     <string name="menu_communicate">Communicate</string>
 
@@ -26,8 +26,55 @@
     <string name="menu_technology">Technology</string>
 
     <string name="menu_feedback">Feedback</string>
+    <string name="menu_search">Search</string>
     <string name="menu_share">Share</string>
     <string name="menu_about">About</string>
     <string name="menu_settings">Settings</string>
+
+    <string name="menu_attribution">Attribution</string>
+    <string name="menu_connection">No connection</string>
+
+    <string name="share_text">Search for achidaNews app by Sirus Laia on Google Play Store</string>
+    <string name="feedback_mailto" translatable="false">mailto:laia.sirus@gmail.com</string>
+    <string name="feedback_subject">My feedback to achidaNews app</string>
+
+    <!-- Api request varibles -->
+    <string name="query_family" translatable="false">family society community</string>
+    <string name="query_hrights" translatable="false">\"human rights\"</string>
+    <string name="query_sport" translatable="false">football sport</string>
+    <string name="query_technology" translatable="false">technology science android</string>
+    <string name="query_wellbeing" translatable="false">health wellbeing lifestyle environment food</string>
+    <string name="section_politics" translatable="false">politics</string>
+    <string name="show_fields" translatable="false">byline,shortUrl,thumbnail</string>
+    <string name="order_by_newest" translatable="false">newest</string>
+
+    <!-- About & attribution -->
+    <string name="about_the_app">About GuNews</string>
+    <string name="about_me_header">About Me</string>
+    <string name="about_me">I\'m new to Android programming and the Udacity\'s nanodegree program has helped me getting started.\n\nPlease give me feedback by sending feedback in the app Settings.</string>
+    <string name="attribution"><b>News source</b>: theguardian.com, one of the few trusted news sources nowadays. <i>So guaranteed no fake</i>.\n\n<b>Code source</b>: The app used the example app by Anitaa Murthy (https://github.com/anitaa1990/PagingLibrary-Sample) as starting point. Some particular solutions are from stockoverflow.com and clearly referenced in the code.\n\n<b>Image</b>: Earth by WikiImages (https://pixabay.com/photos/earth-soil-creep-moon-lunar-surface-11014 )</string>
+
+    <!-- Various -->
+    <string name="no_connection">No Internet.\n\nPlease check the Internet connection.\nTurn on WiFi or mobile data.</string>
+    <string name="content_description">News related image</string>
+    <string name="date_format" formatted="false">%s at %s by</string>
+    <string name="not_available">N/A</string>
+    <string name="search_tips">You can refine the search results by going to <b>Settings</b> and set the order by to <b>relevance</b>, <b>newest</b> or <b>oldest</b>. Use double quote (<b>\"</b>) for exact search word order.</string>
+
+    <!-- Settings preferences: show images -->
+    <string name="settings_show_images_summary">Switch off to hide images</string>
+    <string name="settings_show_image_title">Show images in the news list</string>
+    <string name="settings_show_image_key">showImages</string>
+
+    <!-- Settings preferences: order by -->
+    <string name="settings_order_by_relevance_label">Relevance</string>
+    <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
+    <string name="settings_order_by_newest_label">Newest first</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+    <string name="settings_order_by_oldest_label">Oldest first</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+    <string name="settings_order_by_label">Sort the news by</string>
+    <string name="settings_order_by_key" translatable="false">order-by</string>
+    <string name="settings_order_by_default" translatable="false">newest</string>
 
 </resources>

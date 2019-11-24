@@ -1,12 +1,16 @@
 package com.blogspot.sslaia.achidanews;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -68,5 +72,37 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.nav_about:
+                Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.nav_about);
+                return true;
+            case R.id.nav_settings:
+                Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.nav_settings);
+                return true;
+            case R.id.nav_share:
+                Intent menuShare = new Intent(Intent.ACTION_SEND);
+                menuShare.setType("text/plain");
+                menuShare.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
+                menuShare.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text));
+                if (menuShare.resolveActivity(getPackageManager()) != null) {
+                    startActivity(menuShare);
+                }
+                return true;
+            case R.id.nav_feedback:
+                Intent menuFeedback = new Intent(Intent.ACTION_SENDTO);
+                menuFeedback.setData(Uri.parse(getString(R.string.feedback_mailto)));
+                menuFeedback.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.feedback_subject));
+                if (menuFeedback.resolveActivity(getPackageManager()) != null) {
+                    startActivity(menuFeedback);
+                }
+                return true;
+            default:
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
