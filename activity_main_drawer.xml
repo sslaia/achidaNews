@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/menu_main">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_headlines"
+                    android:icon="@drawable/ic_menu_headlines"
+                    android:title="@string/menu_headlines" />
+                <item
+                    android:id="@+id/nav_family"
+                    android:icon="@drawable/ic_menu_family"
+                    android:title="@string/menu_family" />
+                <item
+                    android:id="@+id/nav_football"
+                    android:icon="@drawable/ic_menu_football"
+                    android:title="@string/menu_football" />
+                <item
+                    android:id="@+id/nav_hrights"
+                    android:icon="@drawable/ic_menu_hrights"
+                    android:title="@string/menu_hrights" />
+                <item
+                    android:id="@+id/nav_politics"
+                    android:icon="@drawable/ic_menu_politics"
+                    android:title="@string/menu_politics" />
+                <item
+                    android:id="@+id/nav_wellbeing"
+                    android:icon="@drawable/ic_menu_health"
+                    android:title="@string/menu_wellbeing" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_alt">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_latest"
+                    android:icon="@drawable/ic_menu_headlines"
+                    android:title="@string/menu_latest" />
+                <item
+                    android:id="@+id/nav_selected"
+                    android:icon="@drawable/ic_menu_selected"
+                    android:title="@string/menu_selected" />
+                <item
+                    android:id="@+id/nav_entertainment"
+                    android:icon="@drawable/ic_menu_entertainment"
+                    android:title="@string/menu_entertainment" />
+                <item
+                    android:id="@+id/nav_health"
+                    android:icon="@drawable/ic_menu_health"
+                    android:title="@string/menu_health" />
+                <item
+                    android:id="@+id/nav_sports"
+                    android:icon="@drawable/ic_menu_sports"
+                    android:title="@string/menu_sports" />
+                <item
+                    android:id="@+id/nav_technology"
+                    android:icon="@drawable/ic_menu_technology"
+                    android:title="@string/menu_technology" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

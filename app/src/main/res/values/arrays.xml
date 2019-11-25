@@ -1,0 +1,182 @@
+<resources>
+    <string-array name="settings_order_by_labels">
+        <item>@string/settings_order_by_relevance_label</item>
+        <item>@string/settings_order_by_newest_label</item>
+        <item>@string/settings_order_by_oldest_label</item>
+    </string-array>
+
+    <string-array name="settings_order_by_values">
+        <item>@string/settings_order_by_relevance_value</item>
+        <item>@string/settings_order_by_newest_value</item>
+        <item>@string/settings_order_by_oldest_value</item>
+    </string-array>
+
+    <string-array name="settings_sort_by_labels">
+        <item>@string/settings_sort_by_relevance_label</item>
+        <item>@string/settings_sort_by_newest_label</item>
+        <item>@string/settings_sort_by_popularity_label</item>
+    </string-array>
+
+    <string-array name="settings_sort_by_values">
+        <item>@string/settings_sort_by_relevance_value</item>
+        <item>@string/settings_sort_by_newest_value</item>
+        <item>@string/settings_sort_by_popularity_value</item>
+    </string-array>
+
+    <string-array name="settings_language_labels">
+        <item>@string/settings_language_ar_label</item>
+        <item>@string/settings_language_zh_label</item>
+        <item>@string/settings_language_se_label</item>
+        <item>@string/settings_language_de_label</item>
+        <item>@string/settings_language_en_label</item>
+        <item>@string/settings_language_es_label</item>
+        <item>@string/settings_language_fr_label</item>
+        <item>@string/settings_language_he_label</item>
+        <item>@string/settings_language_it_label</item>
+        <item>@string/settings_language_nl_label</item>
+        <item>@string/settings_language_no_label</item>
+        <item>@string/settings_language_pt_label</item>
+        <item>@string/settings_language_ru_label</item>
+    </string-array>
+
+    <string-array name="settings_language_values">
+        <item>@string/settings_language_ar_value</item>
+        <item>@string/settings_language_zh_value</item>
+        <item>@string/settings_language_se_value</item>
+        <item>@string/settings_language_de_value</item>
+        <item>@string/settings_language_en_value</item>
+        <item>@string/settings_language_es_value</item>
+        <item>@string/settings_language_fr_value</item>
+        <item>@string/settings_language_he_value</item>
+        <item>@string/settings_language_it_value</item>
+        <item>@string/settings_language_nl_value</item>
+        <item>@string/settings_language_no_value</item>
+        <item>@string/settings_language_pt_value</item>
+        <item>@string/settings_language_ru_value</item>
+    </string-array>
+
+    <string-array name="settings_country_labels">
+        <item>@string/settings_country_ar_label</item>
+        <item>@string/settings_country_au_label</item>
+        <item>@string/settings_country_at_label</item>
+        <item>@string/settings_country_be_label</item>
+        <item>@string/settings_country_br_label</item>
+        <item>@string/settings_country_bg_label</item>
+        <item>@string/settings_country_ca_label</item>
+        <item>@string/settings_country_cn_label</item>
+        <item>@string/settings_country_co_label</item>
+        <item>@string/settings_country_cu_label</item>
+        <item>@string/settings_country_cz_label</item>
+        <item>@string/settings_country_de_label</item>
+        <item>@string/settings_country_eg_label</item>
+        <item>@string/settings_country_fr_label</item>
+        <item>@string/settings_country_gr_label</item>
+        <item>@string/settings_country_hk_label</item>
+        <item>@string/settings_country_hu_label</item>
+        <item>@string/settings_country_in_label</item>
+        <item>@string/settings_country_id_label</item>
+        <item>@string/settings_country_ie_label</item>
+        <item>@string/settings_country_il_label</item>
+        <item>@string/settings_country_it_label</item>
+        <item>@string/settings_country_jp_label</item>
+        <item>@string/settings_country_kr_label</item>
+        <item>@string/settings_country_lv_label</item>
+        <item>@string/settings_country_lt_label</item>
+        <item>@string/settings_country_my_label</item>
+        <item>@string/settings_country_mx_label</item>
+        <item>@string/settings_country_ma_label</item>
+        <item>@string/settings_country_nl_label</item>
+        <item>@string/settings_country_nz_label</item>
+        <item>@string/settings_country_ng_label</item>
+        <item>@string/settings_country_no_label</item>
+        <item>@string/settings_country_ph_label</item>
+        <item>@string/settings_country_pl_label</item>
+        <item>@string/settings_country_pt_label</item>
+        <item>@string/settings_country_ro_label</item>
+        <item>@string/settings_country_ru_label</item>
+        <item>@string/settings_country_sa_label</item>
+        <item>@string/settings_country_rs_label</item>
+        <item>@string/settings_country_sg_label</item>
+        <item>@string/settings_country_si_label</item>
+        <item>@string/settings_country_sk_label</item>
+        <item>@string/settings_country_za_label</item>
+        <item>@string/settings_country_se_label</item>
+        <item>@string/settings_country_ch_label</item>
+        <item>@string/settings_country_tw_label</item>
+        <item>@string/settings_country_th_label</item>
+        <item>@string/settings_country_tr_label</item>
+        <item>@string/settings_country_ua_label</item>
+        <item>@string/settings_country_ae_label</item>
+        <item>@string/settings_country_gb_label</item>
+        <item>@string/settings_country_us_label</item>
+        <item>@string/settings_country_ve_label</item>
+    </string-array>
+
+    <string-array name="settings_country_values">
+        <item>@string/settings_country_ar_value</item>
+        <item>@string/settings_country_au_value</item>
+        <item>@string/settings_country_at_value</item>
+        <item>@string/settings_country_be_value</item>
+        <item>@string/settings_country_br_value</item>
+        <item>@string/settings_country_bg_value</item>
+        <item>@string/settings_country_ca_value</item>
+        <item>@string/settings_country_cn_value</item>
+        <item>@string/settings_country_co_value</item>
+        <item>@string/settings_country_cu_value</item>
+        <item>@string/settings_country_cz_value</item>
+        <item>@string/settings_country_de_value</item>
+        <item>@string/settings_country_eg_value</item>
+        <item>@string/settings_country_fr_value</item>
+        <item>@string/settings_country_gr_value</item>
+        <item>@string/settings_country_hk_value</item>
+        <item>@string/settings_country_hu_value</item>
+        <item>@string/settings_country_in_value</item>
+        <item>@string/settings_country_id_value</item>
+        <item>@string/settings_country_ie_value</item>
+        <item>@string/settings_country_il_value</item>
+        <item>@string/settings_country_it_value</item>
+        <item>@string/settings_country_jp_value</item>
+        <item>@string/settings_country_kr_value</item>
+        <item>@string/settings_country_lv_value</item>
+        <item>@string/settings_country_lt_value</item>
+        <item>@string/settings_country_my_value</item>
+        <item>@string/settings_country_mx_value</item>
+        <item>@string/settings_country_ma_value</item>
+        <item>@string/settings_country_nl_value</item>
+        <item>@string/settings_country_nz_value</item>
+        <item>@string/settings_country_ng_value</item>
+        <item>@string/settings_country_no_value</item>
+        <item>@string/settings_country_ph_value</item>
+        <item>@string/settings_country_pl_value</item>
+        <item>@string/settings_country_pt_value</item>
+        <item>@string/settings_country_ro_value</item>
+        <item>@string/settings_country_ru_value</item>
+        <item>@string/settings_country_sa_value</item>
+        <item>@string/settings_country_rs_value</item>
+        <item>@string/settings_country_sg_value</item>
+        <item>@string/settings_country_si_value</item>
+        <item>@string/settings_country_sk_value</item>
+        <item>@string/settings_country_za_value</item>
+        <item>@string/settings_country_se_value</item>
+        <item>@string/settings_country_ch_value</item>
+        <item>@string/settings_country_tw_value</item>
+        <item>@string/settings_country_th_value</item>
+        <item>@string/settings_country_tr_value</item>
+        <item>@string/settings_country_ua_value</item>
+        <item>@string/settings_country_ae_value</item>
+        <item>@string/settings_country_gb_value</item>
+        <item>@string/settings_country_us_value</item>
+        <item>@string/settings_country_ve_value</item>
+    </string-array>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+</resources>

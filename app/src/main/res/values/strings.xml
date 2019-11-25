@@ -7,23 +7,21 @@
     <string name="nav_header_desc">Navigation header</string>
 
     <!-- Drawer and overflow menu -->
-    <string name="menu_home">Home</string>
-    <string name="menu_main">Main news source</string>
-    <string name="menu_alt">Alternative source</string>
-    <string name="menu_communicate">Communicate</string>
+    <string name="menu_english_news">Selected English News</string>
+    <string name="menu_country_news">My Country News</string>
 
     <string name="menu_headlines">Headlines</string>
-    <string name="menu_family">Family</string>
-    <string name="menu_hrights">Human rights</string>
-    <string name="menu_politics">Politics</string>
-    <string name="menu_sports">Sports</string>
-    <string name="menu_wellbeing">Wellbeing</string>
-
-    <string name="menu_latest">Latest</string>
-    <string name="menu_selected">Selected</string>
+    <string name="menu_business">Business</string>
     <string name="menu_entertainment">Entertainment</string>
     <string name="menu_health">Health</string>
+    <string name="menu_science">Science</string>
+    <string name="menu_sports">Sports</string>
     <string name="menu_technology">Technology</string>
+
+    <string name="menu_latest">Reputable sources</string>
+    <string name="menu_guardian">TheGuardian</string>
+    <string name="menu_politics">Politics</string>
+    <string name="menu_football">Football</string>
 
     <string name="menu_feedback">Feedback</string>
     <string name="menu_search">Search</string>
@@ -38,21 +36,33 @@
     <string name="feedback_mailto" translatable="false">mailto:laia.sirus@gmail.com</string>
     <string name="feedback_subject">My feedback to achidaNews app</string>
 
-    <!-- Api request varibles -->
-    <string name="query_family" translatable="false">family society community</string>
-    <string name="query_hrights" translatable="false">\"human rights\"</string>
-    <string name="query_sport" translatable="false">football sport</string>
-    <string name="query_technology" translatable="false">technology science android</string>
-    <string name="query_wellbeing" translatable="false">health wellbeing lifestyle environment food</string>
+    <!-- Api request varibles: main source -->
+    <string name="section_football" translatable="false">football</string>
     <string name="section_politics" translatable="false">politics</string>
     <string name="show_fields" translatable="false">byline,shortUrl,thumbnail</string>
     <string name="order_by_newest" translatable="false">newest</string>
+
+    <!-- Api request varibles: alternative source -->
+    <string name="category_business" translatable="false">business</string>
+    <string name="category_entertainment" translatable="false">entertainment</string>
+    <string name="category_health" translatable="false">health</string>
+    <string name="category_science" translatable="false">science</string>
+    <string name="category_sports" translatable="false">sports</string>
+    <string name="category_technology" translatable="false">technology</string>
+    <string name="request_sources" translatable="false">abc-news,bbc-news,cnn,reuters,the-new-york-times</string>
+    <string name="request_query" translatable="false">q</string>
+    <string name="request_language" translatable="false">language</string>
+    <string name="request_sortBy" translatable="false">sortBy</string>
+    <string name="request_country" translatable="false">country</string>
+    <string name="request_category" translatable="false">category</string>
+    <string name="country_default" translatable="false">gb</string>
+    <string name="language_default" translatable="false">en</string>
 
     <!-- About & attribution -->
     <string name="about_the_app">About GuNews</string>
     <string name="about_me_header">About Me</string>
     <string name="about_me">I\'m new to Android programming and the Udacity\'s nanodegree program has helped me getting started.\n\nPlease give me feedback by sending feedback in the app Settings.</string>
-    <string name="attribution"><b>News source</b>: theguardian.com, one of the few trusted news sources nowadays. <i>So guaranteed no fake</i>.\n\n<b>Code source</b>: The app used the example app by Anitaa Murthy (https://github.com/anitaa1990/PagingLibrary-Sample) as starting point. Some particular solutions are from stockoverflow.com and clearly referenced in the code.\n\n<b>Image</b>: Earth by WikiImages (https://pixabay.com/photos/earth-soil-creep-moon-lunar-surface-11014 )</string>
+    <string name="attribution"><b>News source</b>: The main news are from theguardian.com, one of the few trusted news sources nowadays. <i>So guaranteed no fake news</i>.\n\nThe alternative news are from various news outlet all over the world as provided by newsapi.org (Be careful to navigate. You may also see news from non-reputable newspapers that are known for their bombastic, click-baiting and fake-news prone headlines).\n\n\Please also note that the alternative news often show empty spaces for images which should be there but contain magically white space.\n\n<b>Code source</b>: The app used the example app by Anitaa Murthy (https://github.com/anitaa1990/PagingLibrary-Sample) as starting point. Some particular solutions are from stockoverflow.com and clearly referenced in the code.\n\n<b>Image</b>: Earth by WikiImages (https://pixabay.com/photos/earth-soil-creep-moon-lunar-surface-11014 )</string>
 
     <!-- Various -->
     <string name="no_connection">No Internet.\n\nPlease check the Internet connection.\nTurn on WiFi or mobile data.</string>
@@ -62,19 +72,202 @@
     <string name="search_tips">You can refine the search results by going to <b>Settings</b> and set the order by to <b>relevance</b>, <b>newest</b> or <b>oldest</b>. Use double quote (<b>\"</b>) for exact search word order.</string>
 
     <!-- Settings preferences: show images -->
-    <string name="settings_show_images_summary">Switch off to hide images</string>
-    <string name="settings_show_image_title">Show images in the news list</string>
-    <string name="settings_show_image_key">showImages</string>
+    <string name="settings_news_list">News list setting</string>
+    <string name="settings_news_search">News search settings</string>
+    <string name="settings_news_selected">Selected news settings</string>
 
-    <!-- Settings preferences: order by -->
+    <!-- Settings preferences: show images -->
+    <string name="settings_show_images_summary">Switch off to hide images</string>
+    <string name="settings_show_images_title">Show images in the news list</string>
+    <string name="settings_show_images_key">showImages</string>
+
+    <!-- Settings preferences: order by (main source) -->
     <string name="settings_order_by_relevance_label">Relevance</string>
     <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
     <string name="settings_order_by_newest_label">Newest first</string>
     <string name="settings_order_by_newest_value" translatable="false">newest</string>
     <string name="settings_order_by_oldest_label">Oldest first</string>
     <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
-    <string name="settings_order_by_label">Sort the news by</string>
+    <string name="settings_order_by_label">Order the news by</string>
     <string name="settings_order_by_key" translatable="false">order-by</string>
     <string name="settings_order_by_default" translatable="false">newest</string>
+
+    <!-- Settings preferences: sort order (alternative source)-->
+    <string name="settings_sort_by_relevance_label">Relevancy</string>
+    <string name="settings_sort_by_relevance_value">relevancy</string>
+    <string name="settings_sort_by_newest_label">Newest</string>
+    <string name="settings_sort_by_newest_value">publishedAt</string>
+    <string name="settings_sort_by_popularity_label">Popularity</string>
+    <string name="settings_sort_by_popularity_value">popularity</string>
+    <string name="settings_sort_by_label">Sort the news by</string>
+    <string name="settings_sort_by_key" translatable="false">sortBy</string>
+    <string name="settings_sort_by_default" translatable="false">publishedAt</string>
+
+    <!-- Settings preferences: Languages list -->
+    <string name="settings_language_label">Language for the news query</string>
+    <string name="settings_language_key" translatable="false">language</string>
+    <string name="settings_language_default" translatable="false">en</string>
+
+    <string name="settings_language_en_label">English</string>
+    <string name="settings_language_en_value" translatable="false">en</string>
+    <string name="settings_language_ar_label">العربية</string>
+    <string name="settings_language_ar_value" translatable="false">ar</string>
+    <string name="settings_language_de_label">Deutsch</string>
+    <string name="settings_language_de_value" translatable="false">de</string>
+    <string name="settings_language_es_label">Español</string>
+    <string name="settings_language_es_value" translatable="false">es</string>
+    <string name="settings_language_fr_label">Français</string>
+    <string name="settings_language_fr_value" translatable="false">fr</string>
+    <string name="settings_language_he_label">עברית</string>
+    <string name="settings_language_he_value" translatable="false">he</string>
+    <string name="settings_language_it_label">Italiano</string>
+    <string name="settings_language_it_value" translatable="false">it</string>
+    <string name="settings_language_nl_label">Nederlands</string>
+    <string name="settings_language_nl_value" translatable="false">nl</string>
+    <string name="settings_language_no_label">Norsk</string>
+    <string name="settings_language_no_value" translatable="false">no</string>
+    <string name="settings_language_pt_label">Português</string>
+    <string name="settings_language_pt_value" translatable="false">pt</string>
+    <string name="settings_language_ru_label">русский</string>
+    <string name="settings_language_ru_value" translatable="false">ru</string>
+    <string name="settings_language_se_label">Davvisámegiella</string>
+    <string name="settings_language_se_value" translatable="false">se</string>
+    <string name="settings_language_zh_label">中文</string>
+    <string name="settings_language_zh_value" translatable="false">zh</string>
+
+    <!-- Settings preferences: Country list labels -->
+    <string name="settings_country_label">Show news from country</string>
+    <string name="settings_country_key" translatable="false">country</string>
+    <string name="settings_country_default" translatable="false">gb</string>
+
+    <string name="settings_country_ae_label">United Arab Emirates</string>
+    <string name="settings_country_ar_label">Argentina</string>
+    <string name="settings_country_at_label">Austria</string>
+    <string name="settings_country_au_label">Australia</string>
+    <string name="settings_country_be_label">Belgium</string>
+    <string name="settings_country_bg_label">Bulgaria</string>
+    <string name="settings_country_br_label">Brazil</string>
+    <string name="settings_country_ca_label">Canada</string>
+    <string name="settings_country_ch_label">Switzerland</string>
+    <string name="settings_country_cn_label">China</string>
+    <string name="settings_country_co_label">Colombia</string>
+    <string name="settings_country_cu_label">Cuba</string>
+    <string name="settings_country_cz_label">Czechia</string>
+    <string name="settings_country_de_label">Deutschland</string>
+    <string name="settings_country_eg_label">Eqypt</string>
+    <string name="settings_country_fr_label">France</string>
+    <string name="settings_country_gb_label">United Kingdom</string>
+    <string name="settings_country_gr_label">Greece</string>
+    <string name="settings_country_hk_label">Hong Kong</string>
+    <string name="settings_country_hu_label">Hungary</string>
+    <string name="settings_country_id_label">Indonesia</string>
+    <string name="settings_country_ie_label">Ireland</string>
+    <string name="settings_country_il_label">Israel</string>
+    <string name="settings_country_in_label">India</string>
+    <string name="settings_country_it_label">Italia</string>
+    <string name="settings_country_jp_label">Japan</string>
+    <string name="settings_country_kr_label">Korea</string>
+    <string name="settings_country_lt_label">Lithuania</string>
+    <string name="settings_country_lv_label">Latvia</string>
+    <string name="settings_country_ma_label">Morocco</string>
+    <string name="settings_country_mx_label">Mexico</string>
+    <string name="settings_country_my_label">Malaysia</string>
+    <string name="settings_country_ng_label">Nigeria</string>
+    <string name="settings_country_nl_label">Netherlands</string>
+    <string name="settings_country_no_label">Norway</string>
+    <string name="settings_country_nz_label">New Zealand</string>
+    <string name="settings_country_ph_label">Philippines</string>
+    <string name="settings_country_pl_label">Poland</string>
+    <string name="settings_country_pt_label">Portugal</string>
+    <string name="settings_country_ro_label">Romania</string>
+    <string name="settings_country_rs_label">Serbia</string>
+    <string name="settings_country_ru_label">Russian Federation</string>
+    <string name="settings_country_sa_label">Saudi Arabia</string>
+    <string name="settings_country_se_label">Sweden</string>
+    <string name="settings_country_sg_label">Singapore</string>
+    <string name="settings_country_si_label">Slovenia</string>
+    <string name="settings_country_sk_label">Slovakia</string>
+    <string name="settings_country_th_label">Thailand</string>
+    <string name="settings_country_tr_label">Turkey</string>
+    <string name="settings_country_tw_label">Taiwan</string>
+    <string name="settings_country_ua_label">Ukraine</string>
+    <string name="settings_country_us_label">USA</string>
+    <string name="settings_country_ve_label">Venezuela</string>
+    <string name="settings_country_za_label">South Africa</string>
+
+    <!-- Settings preferences: Country list values -->
+    <string name="settings_country_ae_value" translatable="false">ae</string>
+    <string name="settings_country_ar_value" translatable="false">ar</string>
+    <string name="settings_country_at_value" translatable="false">at</string>
+    <string name="settings_country_au_value" translatable="false">au</string>
+    <string name="settings_country_be_value" translatable="false">be</string>
+    <string name="settings_country_bg_value" translatable="false">bg</string>
+    <string name="settings_country_br_value" translatable="false">br</string>
+    <string name="settings_country_ca_value" translatable="false">ca</string>
+    <string name="settings_country_ch_value" translatable="false">ch</string>
+    <string name="settings_country_cn_value" translatable="false">cn</string>
+    <string name="settings_country_co_value" translatable="false">co</string>
+    <string name="settings_country_cu_value" translatable="false">cu</string>
+    <string name="settings_country_cz_value" translatable="false">cz</string>
+    <string name="settings_country_de_value" translatable="false">de</string>
+    <string name="settings_country_eg_value" translatable="false">eg</string>
+    <string name="settings_country_fr_value" translatable="false">fr</string>
+    <string name="settings_country_gb_value" translatable="false">gb</string>
+    <string name="settings_country_gr_value" translatable="false">gr</string>
+    <string name="settings_country_hk_value" translatable="false">hk</string>
+    <string name="settings_country_hu_value" translatable="false">hu</string>
+    <string name="settings_country_id_value" translatable="false">id</string>
+    <string name="settings_country_ie_value" translatable="false">ie</string>
+    <string name="settings_country_il_value" translatable="false">il</string>
+    <string name="settings_country_in_value" translatable="false">in</string>
+    <string name="settings_country_it_value" translatable="false">it</string>
+    <string name="settings_country_jp_value" translatable="false">jp</string>
+    <string name="settings_country_kr_value" translatable="false">kr</string>
+    <string name="settings_country_lt_value" translatable="false">lt</string>
+    <string name="settings_country_lv_value" translatable="false">lv</string>
+    <string name="settings_country_ma_value" translatable="false">ma</string>
+    <string name="settings_country_mx_value" translatable="false">mx</string>
+    <string name="settings_country_my_value" translatable="false">my</string>
+    <string name="settings_country_ng_value" translatable="false">ng</string>
+    <string name="settings_country_nl_value" translatable="false">nl</string>
+    <string name="settings_country_no_value" translatable="false">no</string>
+    <string name="settings_country_nz_value" translatable="false">nz</string>
+    <string name="settings_country_ph_value" translatable="false">ph</string>
+    <string name="settings_country_pl_value" translatable="false">pl</string>
+    <string name="settings_country_pt_value" translatable="false">pt</string>
+    <string name="settings_country_ro_value" translatable="false">ro</string>
+    <string name="settings_country_rs_value" translatable="false">rs</string>
+    <string name="settings_country_ru_value" translatable="false">ru</string>
+    <string name="settings_country_sa_value" translatable="false">sa</string>
+    <string name="settings_country_se_value" translatable="false">se</string>
+    <string name="settings_country_sg_value" translatable="false">sg</string>
+    <string name="settings_country_si_value" translatable="false">si</string>
+    <string name="settings_country_sk_value" translatable="false">sk</string>
+    <string name="settings_country_th_value" translatable="false">th</string>
+    <string name="settings_country_tr_value" translatable="false">tr</string>
+    <string name="settings_country_tw_value" translatable="false">tw</string>
+    <string name="settings_country_ua_value" translatable="false">ua</string>
+    <string name="settings_country_us_value" translatable="false">us</string>
+    <string name="settings_country_ve_value" translatable="false">ve</string>
+    <string name="settings_country_za_value" translatable="false">za</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 </resources>

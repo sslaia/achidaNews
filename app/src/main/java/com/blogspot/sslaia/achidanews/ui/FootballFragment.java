@@ -27,7 +27,7 @@ import com.blogspot.sslaia.achidanews.helpers.Controller;
 import com.blogspot.sslaia.achidanews.viewmodel.NewsViewModel;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
-public class FamilyFragment extends Fragment
+public class FootballFragment extends Fragment
         implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     private NewsActivityBinding binding;
@@ -38,7 +38,7 @@ public class FamilyFragment extends Fragment
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         CollapsingToolbarLayout collapsingToolbarLayout = activity.findViewById(R.id.collapsing_toolbar);
-        collapsingToolbarLayout.setTitle(getString(R.string.menu_family));
+        collapsingToolbarLayout.setTitle(getString(R.string.menu_football));
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -53,20 +53,18 @@ public class FamilyFragment extends Fragment
 
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(context));
 
-        PreferenceManager.setDefaultValues(context, R.xml.settings_preferences, false);
-        SharedPreferences mPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+        PreferenceManager.setDefaultValues(getContext(), R.xml.settings, false);
+        SharedPreferences mPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
         mPrefs.registerOnSharedPreferenceChangeListener(this);
 
         // Check preferences whether to show images in the news list
         boolean showImages = mPrefs.getBoolean("showImages", true);
 
-        String ORDER_BY = mPrefs.getString(
-                getString(R.string.settings_order_by_key),
-                getString(R.string.settings_order_by_default));
-        String SECTION = null;
-        String QUERY = getString(R.string.query_family);
+        String QUERY = null;
+        String ORDER_BY = getString(R.string.order_by_newest);
+        String SECTION = getString(R.string.section_football);
         String SHOW_FIELDS = getString(R.string.show_fields);
-        String API_KEY = getString(R.string.theguardian_api_key);
+        String API_KEY = getString(R.string.api_key1);
 
         NewsViewModel model = new NewsViewModel(Controller.create(activity), QUERY, SECTION, ORDER_BY, SHOW_FIELDS, API_KEY);
         NewsAdapter adapter = new NewsAdapter(context, showImages);
@@ -79,7 +77,7 @@ public class FamilyFragment extends Fragment
             public void onChanged(ConnectionModel connection) {
                 if (!connection.getIsConnected()) {
                     NavController navController = Navigation.findNavController(activity, R.id.nav_host_fragment);
-                    navController.navigate(R.id.family_to_connection);
+                    navController.navigate(R.id.football_to_connection);
                 }
             }
         });

@@ -3,16 +3,15 @@ package com.blogspot.sslaia.achidanews.helpers;
 import android.app.Application;
 import android.content.Context;
 
+import com.blogspot.sslaia.achidanews.api.News2Api;
+import com.blogspot.sslaia.achidanews.api.News2ApiFactory;
 import com.blogspot.sslaia.achidanews.api.NewsApi;
 import com.blogspot.sslaia.achidanews.api.NewsApiFactory;
-
-import io.reactivex.Scheduler;
-import io.reactivex.schedulers.Schedulers;
 
 public class Controller extends Application {
 
     private NewsApi newsApi;
-    private Scheduler scheduler;
+    private News2Api news2Api;
 
     @Override
     public void onCreate() {
@@ -35,15 +34,10 @@ public class Controller extends Application {
         return newsApi;
     }
 
-    public void setNewsApi(NewsApi newsApi) {
-        this.newsApi = newsApi;
-    }
-
-    public Scheduler subscribeScheduler() {
-        if (scheduler == null) {
-            scheduler = Schedulers.io();
+    public News2Api getNews2Api() {
+        if(news2Api == null) {
+            news2Api = News2ApiFactory.create();
         }
-
-        return scheduler;
+        return news2Api;
     }
 }

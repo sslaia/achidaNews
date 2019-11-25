@@ -6,6 +6,67 @@
     app:startDestination="@+id/nav_headlines">
 
     <fragment
+        android:id="@+id/nav_about"
+        android:name="com.blogspot.sslaia.achidanews.ui.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about"/>
+
+    <fragment
+        android:id="@+id/nav_business"
+        android:name="com.blogspot.sslaia.achidanews.ui.BusinessFragment"
+        android:label="@string/menu_business"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/business_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_connection"
+        android:name="com.blogspot.sslaia.achidanews.ui.ConnectionFragment"
+        android:label="@string/menu_connection"
+        tools:layout="@layout/fragment_connection">
+        <action
+            android:id="@+id/connection_to_headlines"
+            app:destination="@id/nav_headlines"
+            app:enterAnim="@anim/slide_in_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_entertainment"
+        android:name="com.blogspot.sslaia.achidanews.ui.EntertainmentFragment"
+        android:label="@string/menu_entertainment"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/entertainment_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_football"
+        android:name="com.blogspot.sslaia.achidanews.ui.FootballFragment"
+        android:label="@string/menu_football"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/football_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_guardian"
+        android:name="com.blogspot.sslaia.achidanews.ui.GuardianFragment"
+        android:label="@string/menu_guardian"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/guardian_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
+
+    <fragment
         android:id="@+id/nav_headlines"
         android:name="com.blogspot.sslaia.achidanews.ui.HeadlinesFragment"
         android:label="@string/menu_headlines"
@@ -21,23 +82,23 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_family"
-        android:name="com.blogspot.sslaia.achidanews.ui.FamilyFragment"
-        android:label="@string/menu_family"
+        android:id="@+id/nav_health"
+        android:name="com.blogspot.sslaia.achidanews.ui.HealthFragment"
+        android:label="@string/menu_health"
         tools:layout="@layout/fragment_recyclerview">
         <action
-            android:id="@+id/family_to_connection"
+            android:id="@+id/health_to_connection"
             app:destination="@id/nav_connection"
             app:enterAnim="@anim/slide_in_left"/>
     </fragment>
 
     <fragment
-        android:id="@+id/nav_hrights"
-        android:name="com.blogspot.sslaia.achidanews.ui.HrightsFragment"
-        android:label="@string/menu_hrights"
+        android:id="@+id/nav_latest"
+        android:name="com.blogspot.sslaia.achidanews.ui.LatestFragment"
+        android:label="@string/menu_latest"
         tools:layout="@layout/fragment_recyclerview">
         <action
-            android:id="@+id/hrigts_to_connection"
+            android:id="@+id/latest_to_connection"
             app:destination="@id/nav_connection"
             app:enterAnim="@anim/slide_in_left"/>
     </fragment>
@@ -54,32 +115,15 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_sports"
-        android:name="com.blogspot.sslaia.achidanews.ui.SportFragment"
-        android:label="@string/menu_sports"
+        android:id="@+id/nav_science"
+        android:name="com.blogspot.sslaia.achidanews.ui.ScienceFragment"
+        android:label="@string/menu_science"
         tools:layout="@layout/fragment_recyclerview">
         <action
-            android:id="@+id/sport_to_connection"
+            android:id="@+id/science_to_connection"
             app:destination="@id/nav_connection"
             app:enterAnim="@anim/slide_in_left"/>
     </fragment>
-
-    <fragment
-        android:id="@+id/nav_wellbeing"
-        android:name="com.blogspot.sslaia.achidanews.ui.WellbeingFragment"
-        android:label="@string/menu_wellbeing"
-        tools:layout="@layout/fragment_recyclerview">
-        <action
-            android:id="@+id/wellbeing_to_connection"
-            app:destination="@id/nav_connection"
-            app:enterAnim="@anim/slide_in_left"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/nav_about"
-        android:name="com.blogspot.sslaia.achidanews.ui.AboutFragment"
-        android:label="@string/menu_about"
-        tools:layout="@layout/fragment_about"/>
 
     <fragment
         android:id="@+id/nav_search"
@@ -100,14 +144,25 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_connection"
-        android:name="com.blogspot.sslaia.achidanews.ui.ConnectionFragment"
-        android:label="@string/menu_connection"
-        tools:layout="@layout/fragment_connection">
+        android:id="@+id/nav_sports"
+        android:name="com.blogspot.sslaia.achidanews.ui.SportsFragment"
+        android:label="@string/menu_sports"
+        tools:layout="@layout/fragment_recyclerview">
         <action
-            android:id="@+id/connection_to_headlines"
-            app:destination="@id/nav_headlines"
-            app:enterAnim="@anim/slide_in_right"/>
+            android:id="@+id/sports_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_technology"
+        android:name="com.blogspot.sslaia.achidanews.ui.TechnologyFragment"
+        android:label="@string/menu_technology"
+        tools:layout="@layout/fragment_recyclerview">
+        <action
+            android:id="@+id/technology_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
     </fragment>
 
 </navigation>

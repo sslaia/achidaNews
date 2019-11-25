@@ -2,23 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/nav_settings"
-        android:orderInCategory="100"
-        android:title="@string/menu_settings"
-        app:showAsAction="never" />
-    <item
         android:id="@+id/nav_share"
-        android:orderInCategory="10"
+        android:orderInCategory="8"
         android:title="@string/menu_share"
         app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"
         app:showAsAction="never" />
     <item
         android:id="@+id/nav_feedback"
-        android:orderInCategory="11"
+        android:orderInCategory="9"
         android:title="@string/menu_feedback"
         app:showAsAction="never" />
     <item
+        android:id="@+id/nav_settings"
+        android:orderInCategory="10"
+        android:title="@string/menu_settings"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/nav_about"
-        android:orderInCategory="12"
-        android:title="@string/menu_about" />
+        android:orderInCategory="11"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
 </menu>
