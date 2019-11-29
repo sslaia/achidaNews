@@ -18,8 +18,8 @@
     <string name="menu_sports">Sports</string>
     <string name="menu_technology">Technology</string>
 
-    <string name="menu_latest">Reputable sources</string>
     <string name="menu_guardian">TheGuardian</string>
+    <string name="menu_latest">Reputable sources</string>
     <string name="menu_politics">Politics</string>
     <string name="menu_football">Football</string>
 

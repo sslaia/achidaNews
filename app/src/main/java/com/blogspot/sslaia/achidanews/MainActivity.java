@@ -4,12 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
-import com.blogspot.sslaia.achidanews.ui.SettingsActivity;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
@@ -88,8 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return true;
             case R.id.nav_settings:
-                Intent intentSettings = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(intentSettings);
+                Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.nav_settings);
                 return true;
             case R.id.nav_about:
                 Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.nav_about);

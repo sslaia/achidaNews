@@ -165,4 +165,14 @@
             app:enterAnim="@anim/slide_in_left"/>
     </fragment>
 
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.blogspot.sslaia.achidanews.ui.SettingsFragment"
+        android:label="@string/menu_settings">
+        <action
+            android:id="@+id/settings_to_connection"
+            app:destination="@id/nav_connection"
+            app:enterAnim="@anim/slide_in_left"/>
+    </fragment>
+
 </navigation>
