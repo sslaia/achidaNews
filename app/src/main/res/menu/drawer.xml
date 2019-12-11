@@ -11,9 +11,9 @@
                     android:icon="@drawable/ic_menu_headlines"
                     android:title="@string/menu_guardian" />
                 <item
-                    android:id="@+id/nav_latest"
+                    android:id="@+id/nav_selected"
                     android:icon="@drawable/ic_menu_headlines"
-                    android:title="@string/menu_latest" />
+                    android:title="@string/menu_selected" />
                 <item
                     android:id="@+id/nav_politics"
                     android:icon="@drawable/ic_menu_politics"

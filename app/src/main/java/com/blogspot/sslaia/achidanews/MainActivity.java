@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_about, R.id.nav_business, R.id.nav_connection, R.id.nav_entertainment,
                 R.id.nav_football, R.id.nav_guardian, R.id.nav_headlines, R.id.nav_health,
-                R.id.nav_latest, R.id.nav_politics, R.id.nav_science, R.id.nav_search,
-                R.id.nav_sports, R.id.nav_technology)
+                R.id.nav_politics, R.id.nav_science, R.id.nav_search,
+                R.id.nav_selected, R.id.nav_sports, R.id.nav_technology)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

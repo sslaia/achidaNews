@@ -10,7 +10,7 @@
     <string name="menu_english_news">Selected English News</string>
     <string name="menu_country_news">My Country News</string>
 
-    <string name="menu_headlines">Headlines</string>
+    <string name="menu_headlines">Top headlines</string>
     <string name="menu_business">Business</string>
     <string name="menu_entertainment">Entertainment</string>
     <string name="menu_health">Health</string>
@@ -19,7 +19,7 @@
     <string name="menu_technology">Technology</string>
 
     <string name="menu_guardian">TheGuardian</string>
-    <string name="menu_latest">Reputable sources</string>
+    <string name="menu_selected">Selected sources</string>
     <string name="menu_politics">Politics</string>
     <string name="menu_football">Football</string>
 
@@ -250,24 +250,5 @@
     <string name="settings_country_us_value" translatable="false">us</string>
     <string name="settings_country_ve_value" translatable="false">ve</string>
     <string name="settings_country_za_value" translatable="false">za</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_settings">Settings</string>
-
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 </resources>

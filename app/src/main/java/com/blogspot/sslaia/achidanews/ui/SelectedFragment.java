@@ -27,7 +27,7 @@ import com.blogspot.sslaia.achidanews.helpers.Controller;
 import com.blogspot.sslaia.achidanews.viewmodel.News2ViewModel;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
-public class LatestFragment extends Fragment
+public class SelectedFragment extends Fragment
         implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     private NewsActivityBinding binding;
@@ -43,7 +43,7 @@ public class LatestFragment extends Fragment
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         CollapsingToolbarLayout collapsingToolbarLayout = getActivity().findViewById(R.id.collapsing_toolbar);
-        collapsingToolbarLayout.setTitle(getString(R.string.menu_latest));
+        collapsingToolbarLayout.setTitle(getString(R.string.menu_selected));
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_recyclerview, container, false);
         return binding.getRoot();
     }
